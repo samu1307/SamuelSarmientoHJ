@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/contacto.css">
+    <script src="../js/index.js" defer></script>
+</head>
+<body>
+    <div class="load cxy">
+        <img src="../img/load.gif" alt="Nose">
+    </div>
+    <main class="df cxy" >
+        <div class="main df">
+            <div class="main-container txc">
+                <h2>&bull; CONTACTAME &bull;</h2>
+                <a id="volverA" href="../index.html">Volver</a>
+                <form>
+                    <div class="names df">
+                        <div class="name" >
+                            <span>Nombres</span>
+                            <input type="text" id="vname" name="name" autocomplete="off" required>
+                        </div>
+                        <div class="lastname" >
+                            <span>Apellidos</span>
+                            <input type="text" name="lastname" autocomplete="off" required>
+                        </div>
+                    </div>
+                    <div class="email" >
+                        <span>Correo</span>  
+                        <input type="email" id="email" autocomplete="off" required>
+                    </div>
+                    <div class="names df">
+                        <div class="name" >
+                            <span>Telefono</span>
+                            <input type="number" name="num1" autocomplete="off" minlength="10" required>
+                        </div>
+                        <div class="name" >
+                            <span>Edad</span>
+                            <input type="number" name="num1" autocomplete="off" required>
+                        </div>
+                        <div class="name" >
+                            <span class="fn" >Fecha de nacimiento</span>
+                            <input type="date" name="fecha nacimiento" required>
+                        </div>
+                    </div>
+                    <div class="names df cxy">
+                        <select required>
+                            <option value="" selected hidden aria-required="true">Sexo</option>
+                            <option value="hombre">Hombre</option>
+                            <option value="mujer">Mujer</option>
+                        </select>
+                        <div class="name">
+                            <span>Gustos</span>
+                            <input id="gustos" name="gustos" type="text" required>
+                        </div>
+                    </div>
+                    <div class="call" style="height: 45px;" >
+                        <div class="bc" >
+                            <button onclick="slidesRotate()" class="df bc" id="slides" type="button">
+                                <h3>¿Quieres agendar una llamada?</h3>
+                                <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="16" height="16"><path d="M7,24a1,1,0,0,1-.71-.29,1,1,0,0,1,0-1.42l8.17-8.17a3,3,0,0,0,0-4.24L6.29,1.71A1,1,0,0,1,7.71.29l8.17,8.17a5,5,0,0,1,0,7.08L7.71,23.71A1,1,0,0,1,7,24Z"/></svg>
+                            </button>
+                        </div>
+                        <div class="names df ci" >
+                            <div class="name" >
+                                <span class="fn" >Fecha de videollamada</span>
+                                <input type="date" name="fechav" id="fechav">
+                            </div>
+                            <div class="name" >
+                                <span class="fn" >Hora de videollamada</span>
+                                <input type="time" name="horav" id="horav">
+                            </div>
+                        </div>
+                        <div class="names df cxy" >
+                            <select required>
+                                <option value="ws" selected aria-required="true">WhatsApp</option>
+                                <option value="fc">Facebook</option>
+                                <option value="zoom">Zoom</option>
+                                <option value="meet">Meet</option>
+                                <option value="teams">Teams</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="button" id='submit' onclick="nameInput()">Enviar</button>
+                </form>
+            </div>
+        </div>
+        <div class="tags df">
+            <div class="gustos df">
+                <a href="../index.html">Volver</a>            
+            </div>
+        </div>
+    </main>
+    <div class="main-gracias df cxy">
+        <div class="gracias df cxy">
+            <h2 id="gras" ></h2>
+            <a class="df cxy" href="../index.html">Volver</a>
+        </div>
+    </div>
+</body>
+</html>

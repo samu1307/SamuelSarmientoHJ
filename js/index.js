@@ -12,19 +12,16 @@ const h3Text = document.querySelector('#gras')
 const email = document.querySelector('#email')
 
 
-(
+
+setTimeout(()=>{
+    main.style.display = 'flex'
+    load.style.opacity = 0
+    main.style.opacity = 1
+    document.body.style.overflow = "auto"
     setTimeout(()=>{
-        setTimeout(()=>{
-            main.style.display = 'flex'
-            load.style.opacity = 0
-            main.style.opacity = 1
-            document.body.style.overflow = "auto"
-            setTimeout(()=>{
-                load.style.display = 'none'
-            },1000)
-        }, 1500)
-    },0)
-)()
+        load.style.display = 'none'
+    },1000)
+}, 1500)
 
 
 gustos.placeholder = ''
